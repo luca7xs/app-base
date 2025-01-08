@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: app_base_container
+    environment:
+      MYSQL_ROOT_PASSWORD: app_base_password
+      MYSQL_DATABASE: app_base_database
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
