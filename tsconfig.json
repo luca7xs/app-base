@@ -24,6 +24,7 @@
       "$commands/*": ["src/commands/*"],
       "$events/*": ["src/events/*"],
 
+      "$database/*": ["src/database/prisma/*"],
       "$/*": ["*"],
     },
   },
